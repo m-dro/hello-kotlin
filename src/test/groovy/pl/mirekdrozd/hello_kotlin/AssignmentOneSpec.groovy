@@ -1,8 +1,10 @@
+package pl.mirekdrozd.hello_kotlin
+
 import pl.mirekdrozd.hello_kotlin.AssignmentOne
 import spock.lang.Specification
 
 
-class IdentifierSpec extends Specification {
+class AssignmentOneSpec extends Specification {
 
     def "should check if identifiers are valid"(){
         given: "Assignment class instance"
