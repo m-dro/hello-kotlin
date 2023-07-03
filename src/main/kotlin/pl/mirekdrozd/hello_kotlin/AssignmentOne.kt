@@ -29,4 +29,13 @@ class AssignmentOne {
 
         return (startsWithLetter(text) || text.startsWith('_')) && containsLettersDigitsUnderscoresOnly(text)
     }
-}
+
+    fun isValidIdentifierSimpler(text: String): Boolean {
+        if (text.isEmpty() || text[0].isDigit()) return false
+        for (item in text) {
+            if (!item.isLetterOrDigit() && item != '_') return false
+        }
+        return true
+    }
+
+    }

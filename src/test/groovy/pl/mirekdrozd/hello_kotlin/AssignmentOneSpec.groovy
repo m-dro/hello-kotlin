@@ -13,6 +13,9 @@ class AssignmentOneSpec extends Specification {
         expect: "that inputs are determined invalid"
         assignment.isValidIdentifier(input) == result
 
+        and:
+        assignment.isValidIdentifierSimpler(input) == result
+
         where: "testing inputs are"
         input   ||   result
         "name"  ||   true
